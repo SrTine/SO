@@ -1,0 +1,4 @@
+a) Se debe usar el comando gcc -Wall -o show_file show_file.c
+b) Compilar: gcc -Wall -c -o show_file.o show_file.c
+   Enlazar:  gcc -Wall -o show_file show_file.c
+   	     ld archi.o -o archi -lc -e main -dynamic-linker /lib64/ld-linux-x86-64.so.2

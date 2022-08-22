@@ -1,0 +1,15 @@
+mkdir mount-point
+
+./fs-fuse -t 2097512 -a virtual-disk -f '-d -s mount point'
+
+(en otro terminal)
+
+ls -la mountpoint
+
+./test1.sh (chmod +x test1.sh) - crea dos ficheros en el SF
+
+./my-fsck (chmod +x my-fsck) - comrueba la consistencia del SF
+
+cat mount-point/file1.txt
+
+fusermount -u mount-point

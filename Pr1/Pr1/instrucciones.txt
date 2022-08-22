@@ -1,0 +1,9 @@
+make
+
+./mytar -cf mytar.mtar a.txt b.txt
+
+rm a.txt
+
+rm b.txt
+
+./mytar -xf mytar.mtar
